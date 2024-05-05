@@ -21,5 +21,28 @@ config.native_macos_fullscreen_mode = true
 -- config.window_background_opacity = 0.3
 
 
+-- The art is a bit too bright and colorful to be useful as a backdrop
+
+-- for text, so we're going to dim it down to 10% of its normal brightness
+
+
+
+config.enable_scroll_bar = true
+
+config.min_scroll_bar_height = '2cell'
+
+config.colors = {
+  scrollbar_thumb = 'transparent',
+}
+
+config.background = {
+  {
+    source = {
+      File = wezterm.config_dir .. '/background.jpg',
+    },
+  },
+
+}
+
 
 return config
